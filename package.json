@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "tsx watch src/server.ts",
     "knex": "node --no-warnings --loader tsx ./node_modules/.bin/knex",
+    "build": "tsup src --out-dir build",
     "lint": "eslint src --ext .ts --fix",
     "test": "vitest"
   },
@@ -20,6 +21,7 @@
     "fastify": "^4.17.0",
     "knex": "^2.4.2",
     "sqlite3": "^5.1.6",
+    "tsup": "^7.1.0",
     "typescript": "^5.0.4",
     "zod": "^3.21.4"
   },
